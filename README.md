@@ -5,7 +5,7 @@ This web application creates an very basic blog site using Django. The site allo
 
 The models for this site are as shown below:
 
-![Django Blog Models](./blog/static/images/teatro vera.jpg)
+![Django Blog Models](./blog/static/images/teatro_vera.jpg)
 
 
 For more information see the associated [MDN assessment page](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/django_assessment_blog).
