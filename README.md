@@ -11,7 +11,7 @@ The models for this site are as shown below:
 For more information see the associated [MDN assessment page](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/django_assessment_blog).
 
 
-## Quick Start
+## Comandos para levantar el proyecto
 
 To get this project up and running locally on your computer:
 1. Set up the [Python development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment).
