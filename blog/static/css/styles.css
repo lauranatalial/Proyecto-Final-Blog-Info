@@ -1,6 +1,18 @@
+body{
+    background: rgb(23,108,190) !important;
+    background: linear-gradient(90deg, rgba(23,108,190,1) 0%, rgba(22,154,21,1) 87%) !important;
+}
+
 .sidebar-nav {
     margin-top: 20px;
     padding: 0;
     list-style: none;
 }
 
+.contenido{
+    color: azure;
+}
+
+.nav-vertical {
+    background: white;
+}
