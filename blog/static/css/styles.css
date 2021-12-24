@@ -1,18 +1,30 @@
-body{
-    background: rgb(23,108,190) !important;
-    background: linear-gradient(90deg, rgba(23,108,190,1) 0%, rgba(22,154,21,1) 87%) !important;
+body {
+  background: rgb(23, 108, 190) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 108, 190, 1) 0%,
+    rgba(22, 154, 21, 1) 87%
+  ) !important;
 }
 
 .sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
+  margin: 20px;
+  padding: 0;
+  list-style: none;
 }
 
-.contenido{
-    color: azure;
+.contenido {
+  margin: 4em;
 }
 
 .nav-vertical {
-    background: white;
+  background: white;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+}
+.user-section {
+  margin-top: 20px;
 }
