@@ -1,21 +1,43 @@
-{% extends "base_generic.html" %}
+{% extends "base_generic.html" %} {% block content %}
+<div class="container-fluid">
+  <h1 class="display-1 text-center" style="color: white">Todos los blogs</h1>
 
-{% block content %}
-    <h1>All blogs</h1>
+  {% if blog_list %}
+  <div class="row" style="margin-top: 3rem">
+    {% for blog in blog_list %}
 
-    {% if blog_list %}
-    <ul>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem">
+        <img
+          src="../../../{{blog.image_field}}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ blog.name }}</h5>
+          <p class="blog-card">
+            Fecha:
+            <a href="{{ blog.get_absolute_url }}" class="card-link"
+              >({{blog.post_date}})</a
+            >
+          </p>
+          <p class="blog-card">
+            Autor:
+            <a
+              href="{% url 'blogs-by-author' blog.author.pk %}"
+              class="card-link"
+              >{{ blog.author }}</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
 
-      {% for blog in blog_list %}
-      <li>
-        <a href="{{ blog.get_absolute_url }}">{{ blog.name }}</a> ({{blog.post_date}}) — <a href="{% url 'blogs-by-author' blog.author.pk %}">{{ blog.author }}</a>
-      </li>
-      {% endfor %}
+    {% endfor %}
+  </div>
 
-    </ul>
-
-    {% else %}
-      <p>There are no blogs.</p>
-    {% endif %}       
+  {% else %}
+  <p>There are no blogs.</p>
+  {% endif %}
+</div>
 {% endblock %}
-

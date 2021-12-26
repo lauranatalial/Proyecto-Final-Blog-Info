@@ -39,6 +39,7 @@ class Blog(models.Model):
     author = models.ForeignKey(BlogAuthor, on_delete=models.SET_NULL, null=True)
       # Foreign Key used because Blog can only have one author/User, but bloggsers can have multiple blog posts.
     description = models.TextField(max_length=2000, help_text="Enter you blog text here.")
+    image_field = models.ImageField(upload_to='./static/images', height_field=None, width_field=None, max_length=100, null=True)
     post_date = models.DateField(default=date.today)
     
     class Meta:
